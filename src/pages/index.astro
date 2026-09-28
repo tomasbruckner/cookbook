@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import RecipeList from '../components/RecipeList.astro';
+import Search from '../components/Search.astro';
 import { groupByCategory } from '../lib/recipes';
 
 const recipes = await getCollection('recipes');
@@ -9,6 +10,7 @@ const groups = groupByCategory(recipes);
 ---
 <Base>
   <h1 class="sr-only">Recepty</h1>
+  <Search recipes={recipes} />
   {groups.length === 0 && <p>Zatím žádné recepty.</p>}
   {
     groups.map((g) => (
@@ -22,4 +24,5 @@ const groups = groupByCategory(recipes);
       </section>
     ))
   }
+  <p id="search-empty" hidden class="mt-8 text-zinc-500 dark:text-zinc-400">Nic nenalezeno.</p>
 </Base>

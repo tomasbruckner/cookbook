@@ -1,0 +1,79 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { splitIngredients } from '../lib/sections';
+import { markdownToText } from '../lib/plaintext';
+import type { SearchEntry } from '../lib/search';
+
+interface Props {
+  recipes: CollectionEntry<'recipes'>[];
+}
+const entries: SearchEntry[] = Astro.props.recipes.map((r) => {
+  const body = r.body ?? '';
+  const { ingredients } = splitIngredients(body);
+  return {
+    slug: r.id,
+    title: r.data.title,
+    category: r.data.category,
+    tags: r.data.tags,
+    text: markdownToText(ingredients ?? body),
+  };
+});
+// `<` escapujeme, aby text receptu nemohl ukončit <script>.
+const json = JSON.stringify(entries).replace(/</g, '\\u003c');
+---
+<div id="search" hidden class="mb-6">
+  <label for="search-input" class="sr-only">Hledat recept</label>
+  <input
+    id="search-input"
+    type="search"
+    placeholder="Hledat recept nebo ingredienci…"
+    autocomplete="off"
+    class="w-full rounded-lg border border-zinc-300 bg-white px-4 py-3 text-lg outline-none focus:border-[var(--color-accent)] focus:ring-2 focus:ring-[var(--color-accent)]/30 dark:border-zinc-700 dark:bg-zinc-900"
+  />
+</div>
+<script is:inline type="application/json" id="search-index" set:html={json}></script>
+
+<script>
+  import { matches, type SearchEntry } from '../lib/search';
+
+  function init() {
+    const root = document.getElementById('search');
+    const input = document.getElementById('search-input') as HTMLInputElement | null;
+    const data = document.getElementById('search-index');
+    const empty = document.getElementById('search-empty');
+    if (!root || !input || !data || !empty) return;
+
+    let entries: SearchEntry[];
+    try {
+      entries = JSON.parse(data.textContent ?? '');
+    } catch (err) {
+      console.error('Index hledání nejde načíst', err);
+      return;
+    }
+
+    const bySlug = new Map(entries.map((e) => [e.slug, e]));
+    const items = document.querySelectorAll<HTMLElement>('[data-slug]');
+    const groups = document.querySelectorAll<HTMLElement>('[data-group]');
+
+    const apply = () => {
+      let visible = 0;
+      items.forEach((li) => {
+        const entry = bySlug.get(li.dataset.slug ?? '');
+        const show = entry ? matches(entry, input.value) : true;
+        li.hidden = !show;
+        if (show) visible++;
+      });
+      groups.forEach((g) => {
+        g.hidden = !g.querySelector('[data-slug]:not([hidden])');
+      });
+      empty.hidden = visible > 0;
+    };
+
+    input.addEventListener('input', apply);
+    root.hidden = false;
+    // prohlížeč může po návratu zpět obnovit text v poli
+    if (input.value) apply();
+  }
+
+  init();
+</script>
