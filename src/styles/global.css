@@ -7,6 +7,12 @@
   --color-accent: #b45309;
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-accent: #fbbf24;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

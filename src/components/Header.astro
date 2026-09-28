@@ -19,7 +19,7 @@ const current = Astro.url.pathname;
                 <a
                   href={href}
                   aria-current={current === href ? 'page' : undefined}
-                  class="hover:underline aria-[current=page]:font-semibold"
+                  class="inline-block py-1 hover:underline aria-[current=page]:font-semibold"
                 >
                   {g.label}
                 </a>

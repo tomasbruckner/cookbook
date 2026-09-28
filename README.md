@@ -4,7 +4,7 @@ Osobní kuchařka jako statický web (Astro + Cloudflare Workers).
 
 ## Přidání receptu
 
-1. Vytvoř `src/content/recipes/<nazev-bez-diakritiky>.md`:
+1. Vytvoř `src/content/recipes/<slug>.md`, kde `<slug>` = `slugify(title)` (jen znaky `[a-z0-9-]`, bez diakritiky), při kolizi s `-N` (N ≥ 2), např. „Omáčka: základní (2×)“ → `omacka-zakladni-2`:
 
    ```markdown
    ---
@@ -13,6 +13,7 @@ Osobní kuchařka jako statický web (Astro + Cloudflare Workers).
    tags: [italska]          # volitelné
    servings: 4              # volitelné
    time: 45                 # volitelné, minuty
+   source: https://…        # volitelné
    ---
 
    [odkaz na zdroj](https://…)
