@@ -44,6 +44,25 @@ test('ingredients sit left of the method on desktop', async ({ page }, testInfo)
   test.skip(true, 'žádný recept se sekcí Ingredience');
 });
 
+test('a long ingredients list can be scrolled into view within the sticky column', async ({ page }, testInfo) => {
+  test.skip(testInfo.project.name !== 'desktop', 'jen desktop');
+  await page.setViewportSize({ width: 1024, height: 768 });
+  for (const href of await recipeHrefs(page)) {
+    await page.goto(href);
+    const ingredients = page.locator('[data-section="ingredients"]');
+    if ((await ingredients.count()) === 0) continue;
+    const box = await ingredients.boundingBox();
+    if (!box || box.height <= 700) continue; // jen dost dlouhý seznam ingrediencí aktivuje omezení výšky
+    // sroluj stránku jen kousek dolů, do postupu (ne až na konec stránky)
+    await page.evaluate(() => window.scrollBy(0, 500));
+    const lastLi = ingredients.locator('li').last();
+    await ingredients.evaluate((el) => el.scrollTo(0, el.scrollHeight));
+    await expect(lastLi).toBeInViewport();
+    return;
+  }
+  test.skip(true, 'žádný recept s dost dlouhým seznamem ingrediencí');
+});
+
 test('recipe without ingredients section renders as one column', async ({ page }) => {
   for (const href of await recipeHrefs(page)) {
     await page.goto(href);

@@ -44,7 +44,7 @@ const prose =
     {
       ingredients !== null && (
         <div class="mt-6 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-10">
-          <div data-section="ingredients" class={`${prose} lg:sticky lg:top-4 lg:self-start`} set:html={html(ingredients)} />
+          <div data-section="ingredients" class={`${prose} lg:sticky lg:top-4 lg:self-start lg:max-h-[calc(100dvh-2rem)] lg:overflow-y-auto`} set:html={html(ingredients)} />
           <div data-section="rest" class={prose} set:html={html(after)} />
         </div>
       )

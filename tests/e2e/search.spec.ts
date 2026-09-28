@@ -11,7 +11,11 @@ test('search without diacritics finds the recipe', async ({ page }) => {
   await box.fill(strip(title));
   const visible = page.locator('[data-slug]:visible');
   await expect(visible.filter({ hasText: title }).first()).toBeVisible();
-  expect(await visible.count()).toBeLessThanOrEqual(total);
+  if (total > 1) {
+    await expect
+      .poll(() => visible.count())
+      .toBeLessThan(total);
+  }
 
   await box.fill(`  ${title.toUpperCase()}  `);
   await expect(visible.filter({ hasText: title }).first()).toBeVisible();
