@@ -1,7 +1,7 @@
 # Osobní kuchařka — statický web
 
 **Datum:** 2026-09-28
-**Stav:** Návrh ke schválení
+**Stav:** Schváleno k plánování
 
 ## Cíl
 
@@ -44,12 +44,32 @@ Vzhled a SEO jsou druhotné. Žádný backend.
 `test:unit`, `test:e2e`.
 
 Bez `@astrojs/sitemap` a bez OG / JSON-LD — web je osobní, SEO nás nezajímá.
-`public/robots.txt` zakáže indexaci (`Disallow: /`).
+Indexaci zakazuje jen `<meta name="robots" content="noindex">` v `Base.astro`.
+`robots.txt` se **nepřidává** — `Disallow` by vyhledávačům zabránil stránku přečíst,
+a tedy i uvidět `noindex`. (Nejde o přístupovou ochranu; web je veřejně dostupný.)
 
 ## Datový model
 
-Každý recept je soubor `src/content/recipes/<slug>.md`. Slug = název bez diakritiky,
-malými písmeny, mezery → `-` (např. „Svíčková na smetaně" → `svickova-na-smetane`).
+Každý recept je soubor `src/content/recipes/<slug>.md`. Slug je zároveň URL
+(`/recept/<slug>/`) i jméno souboru, proto musí být bezpečný pro Windows i URL.
+
+**Algoritmus `slugify(title)`** (`src/lib/slug.ts`, jediná implementace pro převod
+i validaci):
+1. `normalize('NFD')` a odstranění combining marks (diakritika pryč).
+2. Lowercase.
+3. Každá souvislá posloupnost znaků mimo `[a-z0-9]` → jedna `-`.
+4. Oříznutí `-` na začátku a konci.
+5. Prázdný výsledek → výjimka (recept bez použitelného názvu musí opravit člověk).
+6. Rezervované jméno Windows → přidá se `-recept`.
+
+Příklady: „Svíčková na smetaně" → `svickova-na-smetane`, „Omáčka: základní (2×)" →
+`omacka-zakladni-2`. Výstup obsahuje jen `[a-z0-9-]`, takže nemůže obsahovat znak
+nepovolený ve Windows. Rezervovaná jména Windows platí i s příponou (`con.md`), proto
+slug `con`, `prn`, `aux`, `nul`, `com1`–`com9`, `lpt1`–`lpt9` dostane suffix `-recept`
+(krok 6 algoritmu).
+
+**Kolize:** pokud `<slug>.md` už existuje, použije se první volné `<slug>-2`,
+`<slug>-3`… Název souboru je tedy `slugify(title)` nebo `slugify(title)-N` (N ≥ 2).
 
 ```markdown
 ---
@@ -93,6 +113,21 @@ Schéma v `src/content.config.ts` (Zod, glob loader nad `src/content/recipes/`):
   vynucená struktura; `## Poznámky` volitelná. Suroviny nejsou strukturovaná data
   (žádné množství/jednotka) — přepočet porcí je mimo rozsah.
 
+**Sekce Suroviny — kontrakt** (`src/lib/sections.ts`, `splitIngredients(markdown)`,
+sdílí ho layout detailu i index hledání; pracuje nad zdrojovým Markdownem, ne nad
+renderovaným HTML):
+- Začátek: **první** nadpis úrovně 2, jehož text po trim a lowercase je přesně
+  `suroviny`.
+- Konec: následující nadpis úrovně 2 (jakýkoli), nebo konec dokumentu. Nadpisy
+  `###` uvnitř (např. „Na těsto", „Na krém") patří do sekce.
+- Funkce vrací `{ before, ingredients, after }` — tři kusy Markdownu, jejichž
+  spojení je přesně původní tělo. Každý blok se tak vyrenderuje právě jednou, ve
+  zdrojovém pořadí.
+- Chybí-li sekce: `ingredients = null`, `before` = celé tělo.
+- Druhý nadpis `## Suroviny` se nijak zvlášť neřeší — patří do `after`.
+- Nadpisy uvnitř fenced code bloků se ignorují (v receptech nepravděpodobné, ale
+  parser to nesmí rozbít).
+
 ## Stránky
 
 | Route | Soubor | Obsah |
@@ -104,10 +139,11 @@ Schéma v `src/content.config.ts` (Zod, glob loader nad `src/content/recipes/`):
 | `/404` | `src/pages/404.astro` | Odkaz domů. |
 
 **Detail receptu:** název, meta řádek (kategorie jako odkaz, čas, porce, zdroj),
-štítky jako odkazy, pak vyrenderovaný Markdown. Mobile-first, jeden sloupec, větší
-písmo. Na širokém displeji (`lg:`) suroviny vlevo (sticky) a postup vpravo — dělení
-podle nadpisu `## Suroviny` v renderovaném HTML; když recept sekci Suroviny nemá,
-zůstane jeden sloupec.
+štítky jako odkazy, pak obsah. Mobile-first, jeden sloupec, větší písmo. Obsah se
+dělí přes `splitIngredients` (viz Datový model): `before` přes celou šířku, pak na
+širokém displeji (`lg:`) dva sloupce — `ingredients` vlevo (sticky), `after` vpravo.
+Na mobilu tytéž tři části pod sebou. Když `ingredients` je `null`, celé tělo je
+jeden sloupec.
 
 **Komponenty (`src/components/`):**
 
@@ -123,11 +159,17 @@ Layout `src/layouts/Base.astro`: `<html lang="cs">`, title, meta viewport,
 
 ## Hledání
 
-- Při buildu endpoint `src/pages/search-index.json.ts` vygeneruje JSON pole
-  `{ slug, title, category, tags, text }`, kde `text` je obsah sekce Suroviny
-  (prostý text bez Markdownu). Při ~50 receptech jednotky kB.
-- `Search.astro` stáhne index při prvním fokusu pole a filtruje při psaní:
-  každé slovo dotazu musí být obsaženo v `title + tags + text` (AND).
+- Index se při buildu **vloží přímo do úvodní stránky** jako
+  `<script type="application/json" id="search-index">` — žádný samostatný soubor,
+  žádný síťový požadavek, tedy žádný stav „načítá se" ani „stažení selhalo".
+  Při ~50 receptech jde o jednotky kB.
+- Položka indexu: `{ slug, title, category, tags, text }`, kde `text` je
+  `ingredients` ze `splitIngredients` převedený na prostý text (bez Markdown
+  syntaxe); když recept sekci Suroviny nemá, je `text` celé tělo jako prostý text.
+- `Search.astro` při psaní filtruje: každé slovo dotazu musí být obsaženo
+  v `title + tags + text` (AND). Prázdný dotaz (po trim) zobrazí vše.
+- Pokud `JSON.parse` indexu selže (chyba buildu), pole se nezobrazí a v konzoli
+  je chyba — výpis receptů funguje dál.
 - **Normalizace** (dotaz i data): lowercase + odstranění diakritiky
   (`normalize('NFD')` + odstranění combining marks). „svickova" najde „Svíčková".
 - Filtrování skrývá položky už vyrenderované v `RecipeList` (podle `data-slug`),
@@ -148,7 +190,9 @@ Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/
      z reálného exportu) a rozdělí dokument na kusy.
    - Obsah před prvním nadpisem receptu zahodí (a vypíše, co zahodil).
    - Každý kus uloží jako `migration/raw/<slug>.md` (slug přes sdílenou funkci
-     `src/lib/slug.ts`). Při kolizi slugů přidá suffix `-2` a vypíše varování.
+     `src/lib/slug.ts`). Při kolizi použije první volný suffix `-2`, `-3`… (viz
+     Datový model) a vypíše varování. Nadpis, ze kterého vyjde prázdný slug, skript
+     vypíše jako chybu a přeskočí ho.
    - Na konci vypíše počet receptů a jejich seznam — uživatel porovná s dokumentem.
 3. **Normalizace (Claude v konverzaci):** každý raw kus převede do formátu z kapitoly
    Datový model: doplní frontmatter, navrhne kategorii a štítky, rozdělí obsah do
@@ -176,11 +220,18 @@ Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/
 
 - **vitest** (`tests/unit/`):
   - `search.test.ts` — normalizace diakritiky, AND matching více slov, prázdný dotaz vrací vše.
-  - `slug.test.ts` — diakritika, mezery, interpunkce, vícenásobné pomlčky.
+  - `slug.test.ts` — diakritika, mezery, interpunkce (`:`, `/`, `(`, `×`) →
+    jedna pomlčka, oříznutí krajních pomlček, prázdný výsledek → výjimka,
+    rezervovaná jména Windows → `-recept`.
+  - `sections.test.ts` — `splitIngredients`: sekce uprostřed, na konci, chybějící,
+    s `###` podnadpisy, dvojí `## Suroviny`, nadpis v code bloku; vždy platí
+    `before + ingredients + after === body`.
   - `split.test.ts` — rozsekání ukázkového exportu (fixture) na správný počet kusů
-    se správnými názvy, zahození úvodu, kolize slugů.
-  - `content.test.ts` — každá `category` receptu existuje v `CATEGORIES`, slugy
-    souborů jsou unikátní a odpovídají `slugify(title)`.
+    se správnými názvy, zahození úvodu, kolize slugů včetně situace, kdy `-2`
+    už existuje.
+  - `content.test.ts` — každá `category` receptu existuje v `CATEGORIES`; název
+    každého souboru je `slugify(title)` nebo `slugify(title)-N` (N ≥ 2).
+    Unikátnost zaručuje souborový systém.
 - **Validace obsahu:** Astro schéma při `build` / `check` — neplatný frontmatter
   build zastaví.
 - **playwright** (`tests/e2e/smoke.spec.ts`): úvodní stránka se načte a obsahuje
