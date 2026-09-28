@@ -1,0 +1,22 @@
+---
+interface Props {
+  tags: string[];
+}
+const { tags } = Astro.props;
+---
+{
+  tags.length > 0 && (
+    <ul class="flex flex-wrap gap-2" aria-label="Štítky">
+      {tags.map((tag) => (
+        <li>
+          <a
+            href={`/stitek/${tag}/`}
+            class="rounded-full bg-zinc-100 px-2 py-0.5 text-xs text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700"
+          >
+            #{tag}
+          </a>
+        </li>
+      ))}
+    </ul>
+  )
+}

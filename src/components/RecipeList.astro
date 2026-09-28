@@ -1,0 +1,30 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { categoryLabel } from '../consts';
+import TagList from './TagList.astro';
+
+interface Props {
+  recipes: CollectionEntry<'recipes'>[];
+  showCategory?: boolean;
+}
+const { recipes, showCategory = false } = Astro.props;
+---
+<ul class="divide-y divide-zinc-200 dark:divide-zinc-800">
+  {
+    recipes.map((r) => (
+      <li data-slug={r.id} class="py-3">
+        <a href={`/recept/${r.id}/`} class="text-lg font-medium hover:text-[var(--color-accent)]">
+          {r.data.title}
+        </a>
+        {showCategory && (
+          <span class="ml-2 text-sm text-zinc-500 dark:text-zinc-400">{categoryLabel(r.data.category)}</span>
+        )}
+        {r.data.tags.length > 0 && (
+          <div class="mt-1">
+            <TagList tags={r.data.tags} />
+          </div>
+        )}
+      </li>
+    ))
+  }
+</ul>

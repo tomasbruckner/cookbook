@@ -1,0 +1,24 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import RecipeList from '../../components/RecipeList.astro';
+import { collectTags, withTag } from '../../lib/recipes';
+
+export async function getStaticPaths() {
+  const recipes = await getCollection('recipes');
+  return collectTags(recipes).map((tag) => ({
+    params: { tag },
+    props: { tag, recipes: withTag(recipes, tag) },
+  }));
+}
+
+interface Props {
+  tag: string;
+  recipes: CollectionEntry<'recipes'>[];
+}
+const { tag, recipes } = Astro.props;
+---
+<Base title={`#${tag}`}>
+  <h1 class="mb-4 text-3xl font-bold">#{tag}</h1>
+  <RecipeList recipes={recipes} showCategory />
+</Base>

@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import RecipeList from '../../components/RecipeList.astro';
+import { groupByCategory, type CategoryGroup } from '../../lib/recipes';
+import type { CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const groups = groupByCategory(await getCollection('recipes'));
+  return groups.map((group) => ({ params: { category: group.key }, props: { group } }));
+}
+
+interface Props {
+  group: CategoryGroup<CollectionEntry<'recipes'>>;
+}
+const { group } = Astro.props;
+---
+<Base title={group.label}>
+  <h1 class="mb-4 text-3xl font-bold">{group.label}</h1>
+  <RecipeList recipes={group.recipes} />
+</Base>

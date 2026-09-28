@@ -1,0 +1,33 @@
+---
+import { getCollection } from 'astro:content';
+import { SITE_NAME } from '../consts';
+import { groupByCategory } from '../lib/recipes';
+
+const groups = groupByCategory(await getCollection('recipes'));
+const current = Astro.url.pathname;
+---
+<header class="border-b border-zinc-200 dark:border-zinc-800">
+  <div class="mx-auto flex max-w-5xl flex-wrap items-baseline gap-x-6 gap-y-2 px-4 py-4">
+    <a href="/" class="text-xl font-bold text-[var(--color-accent)]">{SITE_NAME}</a>
+    <nav aria-label="Kategorie">
+      <ul class="flex flex-wrap gap-x-4 gap-y-1 text-sm">
+        {
+          groups.map((g) => {
+            const href = `/kategorie/${g.key}/`;
+            return (
+              <li>
+                <a
+                  href={href}
+                  aria-current={current === href ? 'page' : undefined}
+                  class="hover:underline aria-[current=page]:font-semibold"
+                >
+                  {g.label}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+  </div>
+</header>
