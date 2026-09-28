@@ -1,0 +1,9 @@
+node_modules
+.idea
+
+dist
+.astro
+.wrangler
+test-results
+playwright-report
+migration/

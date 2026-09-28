@@ -26,7 +26,7 @@ Vzhled a SEO jsou druhotné. Žádný backend.
 | Funkce | **Hledání + kategorie/štítky.** Nic dalšího v první verzi. |
 | Formát receptu | Markdown + frontmatter, Astro content collection se schématem. |
 | Převod | Skript rozseká export podle nadpisů → normalizace do formátu provedená Claudem v konverzaci → ruční revize. Jednorázově; Google Docs pak přestává být zdrojem. |
-| Stack | **Astro 5 + Tailwind 4**, TypeScript strict — stejně jako `../akbrucknerova`. |
+| Stack | **Astro 7 + Tailwind 4**, TypeScript strict — stack jako `../akbrucknerova`, ale aktuální major Astra (akbrucknerova je na 5). |
 | Hosting | **Cloudflare Workers Static Assets** (ne Pages). Cloudflare je doporučuje pro nové projekty; Pages už nedostávají nové funkce. Jediná vědomá odchylka od `../akbrucknerova`. |
 | Deploy | **Wrangler direct upload** přes `deploy.ps1` (build → `wrangler deploy`), stejně jako akbrucknerova. Není git-connected. |
 | Dark mode | Ano, podle systému (`prefers-color-scheme`), bez přepínače. |
@@ -34,14 +34,18 @@ Vzhled a SEO jsou druhotné. Žádný backend.
 
 ## Stack
 
-- **Astro 5**, statický výstup (`output: 'static'`)
-- **Tailwind 4** přes `@tailwindcss/vite`
-- **TypeScript** (`astro/tsconfigs/strict`)
+- **Astro 7**, statický výstup (`output: 'static'`); vyžaduje **Node ≥ 22.12**
+- **Tailwind 4** přes `@tailwindcss/vite` + `@tailwindcss/typography` (styl
+  vyrenderovaného Markdownu)
+- **TypeScript 6** (`astro/tsconfigs/strict`) — `@astrojs/check` zatím TS 7 nepodporuje
 - `@fontsource-variable/inter`
-- Dev tooling: `wrangler`, `vitest`, `@playwright/test`, `@astrojs/check`
+- `marked` — render Markdownu po částech (detail receptu dělí tělo na tři části,
+  viz Sekce Ingredience; `render(entry)` z Astra umí jen celé tělo)
+- Dev tooling: `wrangler`, `vitest`, `@playwright/test`, `@astrojs/check`, `tsx`
+  (spouštění migračního skriptu), `yaml` (čtení frontmatteru v unit testu)
 
 `package.json` scripts (zrcadlí akbrucknerova): `dev`, `build`, `preview`, `check`,
-`test:unit`, `test:e2e`.
+`test:unit`, `test:e2e`, navíc `migrate:split`.
 
 Bez `@astrojs/sitemap` a bez OG / JSON-LD — web je osobní, SEO nás nezajímá.
 Indexaci zakazuje jen `<meta name="robots" content="noindex">` v `Base.astro`.
@@ -74,14 +78,14 @@ slug `con`, `prn`, `aux`, `nul`, `com1`–`com9`, `lpt1`–`lpt9` dostane suffix
 ```markdown
 ---
 title: Svíčková na smetaně
-category: hlavni-jidla
+category: hlavni-chody
 tags: [maso, vikend]
 servings: 4
 time: 180
 source: babička
 ---
 
-## Suroviny
+## Ingredience
 - 1 kg hovězí svíčkové
 - ...
 
@@ -104,27 +108,30 @@ Schéma v `src/content.config.ts` (Zod, glob loader nad `src/content/recipes/`):
 | `source` | string | ne | Odkud recept je. |
 
 - **Kategorie:** právě jedna na recept, pevný seznam v `src/consts.ts` jako
-  `CATEGORIES` (klíč → český název + pořadí). Výchozí návrh: `polevky`,
-  `hlavni-jidla`, `prilohy`, `salaty`, `dezerty`, `peceni`, `ostatni`. Finální seznam
-  se doladí během převodu podle skutečného obsahu.
+  `CATEGORIES` (klíč → český název + pořadí). Seznam odpovídá kapitolám (H1)
+  exportu: `snidane` (Snídaně), `predkrmy-a-polevky` (Předkrmy a polévky),
+  `hlavni-chody` (Hlavní chody), `dezerty` (Dezerty a sladké), `svaciny` (Svačiny),
+  `ostatni` (Ostatní).
 - **Štítky:** volné, recept jich může mít víc. Na web se zobrazují tak, jak jsou
-  zapsané (bez mapování na hezčí názvy).
-- **Tělo:** obyčejný Markdown. Sekce `## Suroviny` a `## Postup` jsou konvence, ne
+  zapsané (bez mapování na hezčí názvy). Kapitoly exportu „Hlavní chody - <kuchyně>"
+  se mapují na kategorii `hlavni-chody` + štítek kuchyně: `cinska`, `japonska`,
+  `kazasska`, `mexicka`, `italska`, `indicka`, `vietnamska`, `korejska`.
+- **Tělo:** obyčejný Markdown. Sekce `## Ingredience` a `## Postup` jsou konvence, ne
   vynucená struktura; `## Poznámky` volitelná. Suroviny nejsou strukturovaná data
   (žádné množství/jednotka) — přepočet porcí je mimo rozsah.
 
-**Sekce Suroviny — kontrakt** (`src/lib/sections.ts`, `splitIngredients(markdown)`,
+**Sekce Ingredience — kontrakt** (`src/lib/sections.ts`, `splitIngredients(markdown)`,
 sdílí ho layout detailu i index hledání; pracuje nad zdrojovým Markdownem, ne nad
 renderovaným HTML):
 - Začátek: **první** nadpis úrovně 2, jehož text po trim a lowercase je přesně
-  `suroviny`.
+  `ingredience`.
 - Konec: následující nadpis úrovně 2 (jakýkoli), nebo konec dokumentu. Nadpisy
   `###` uvnitř (např. „Na těsto", „Na krém") patří do sekce.
 - Funkce vrací `{ before, ingredients, after }` — tři kusy Markdownu, jejichž
   spojení je přesně původní tělo. Každý blok se tak vyrenderuje právě jednou, ve
   zdrojovém pořadí.
 - Chybí-li sekce: `ingredients = null`, `before` = celé tělo.
-- Druhý nadpis `## Suroviny` se nijak zvlášť neřeší — patří do `after`.
+- Druhý nadpis `## Ingredience` se nijak zvlášť neřeší — patří do `after`.
 - Nadpisy uvnitř fenced code bloků se ignorují (v receptech nepravděpodobné, ale
   parser to nesmí rozbít).
 
@@ -165,7 +172,7 @@ Layout `src/layouts/Base.astro`: `<html lang="cs">`, title, meta viewport,
   Při ~50 receptech jde o jednotky kB.
 - Položka indexu: `{ slug, title, category, tags, text }`, kde `text` je
   `ingredients` ze `splitIngredients` převedený na prostý text (bez Markdown
-  syntaxe); když recept sekci Suroviny nemá, je `text` celé tělo jako prostý text.
+  syntaxe); když recept sekci Ingredience nemá, je `text` celé tělo jako prostý text.
 - `Search.astro` při psaní filtruje: každé slovo dotazu musí být obsaženo
   v `title + tags + text` (AND). Prázdný dotaz (po trim) zobrazí vše.
 - Pokud `JSON.parse` indexu selže (chyba buildu), pole se nezobrazí a v konzoli
@@ -183,22 +190,40 @@ Layout `src/layouts/Base.astro`: `<html lang="cs">`, title, meta viewport,
 Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/`
 (v `.gitignore`). Po dokončení převodu lze obojí smazat.
 
-1. **Export (ručně, uživatel):** Google Docs → Soubor → Stáhnout → Markdown (`.md`)
-   → uložit jako `migration/source.md`.
-2. **Rozsekání (`scripts/migrate/split.ts`, spouští se přes `npx tsx`):**
-   - Najde nadpisy dané úrovně (H1 nebo H2 — parametr `--level`, zjistí se
-     z reálného exportu) a rozdělí dokument na kusy.
-   - Obsah před prvním nadpisem receptu zahodí (a vypíše, co zahodil).
+1. **Export (hotovo):** `migration/source.md` — 56 receptů, 1705 řádků, LF.
+   Zjištěná struktura:
+   - `#` = kapitola (→ kategorie, u „Hlavní chody - <kuchyně>" i štítek),
+     `##` = recept, `###` = části receptu („Ingredience", „Ingredience (4 porce)",
+     „Ingredience knedlík", „Postup", „POSTUP:", „Instrukce", „Videonávod"…).
+   - Na začátku je obsah dokumentu (TOC) s odkazy `[Název](#kotva)` pod prázdným `# `.
+   - Nadpisy nesou kotvy Google Docs `{#pancakes}` a Markdown escapy (`\-`, `\_`, `\&`).
+   - Většina receptů začíná odkazem na zdroj (YouTube, web).
+   - Žádné obrázky.
+2. **Rozsekání (`scripts/migrate/split.ts`, spouští se `npm run migrate:split`):**
+   - Recept = nadpis úrovně `--level` (výchozí 2). Nadpis vyšší úrovně (`#`) recept
+     ukončí a stane se „kapitolou" dalších receptů; zapíše se do raw souboru jako
+     komentář `<!-- kapitola: … -->`, aby šla při normalizaci určit kategorie.
+   - Z názvu se odstraní kotva `{#…}`, zvýraznění `**…**` a Markdown escapy.
+   - Text mimo recepty (TOC, obsah kapitol před prvním receptem) zahodí a vypíše.
    - Každý kus uloží jako `migration/raw/<slug>.md` (slug přes sdílenou funkci
      `src/lib/slug.ts`). Při kolizi použije první volný suffix `-2`, `-3`… (viz
      Datový model) a vypíše varování. Nadpis, ze kterého vyjde prázdný slug, skript
      vypíše jako chybu a přeskočí ho.
    - Na konci vypíše počet receptů a jejich seznam — uživatel porovná s dokumentem.
 3. **Normalizace (Claude v konverzaci):** každý raw kus převede do formátu z kapitoly
-   Datový model: doplní frontmatter, navrhne kategorii a štítky, rozdělí obsah do
-   `## Suroviny` / `## Postup` / `## Poznámky`. **Text receptu se nepřepisuje**, jen
-   strukturuje; co se nevejde do Surovin/Postupu, jde do Poznámek. Výsledek do
-   `src/content/recipes/`.
+   Datový model: doplní frontmatter (kategorie a štítek kuchyně z kapitoly),
+   rozdělí obsah do `## Ingredience` / `## Postup` / `## Poznámky`. **Text receptu
+   se nepřepisuje**, jen strukturuje:
+   - Odkazy na zdroj a úvodní text zůstávají nahoře, nad `## Ingredience`.
+   - Více skupin ingrediencí („Ingredience svíčková", „Ingredience knedlík") →
+     jedno `## Ingredience` s podnadpisy `### Svíčková`, `### Knedlík`; totéž pro
+     postup. Střídané bloky (pizza: těsto → postup → náplň → postup) se seskupí.
+   - Počet porcí z nadpisu („(4 porce)") → `servings`; liší-li se porce mezi
+     skupinami, zůstanou v podnadpisech a `servings` se nevyplní.
+   - Varianty „POSTUP:", „Instrukce" → `## Postup`; ostatní nadpisy („Akce",
+     „Omáčka", „Videonávod") zůstanou jako `###` v nejbližší sekci nebo jdou do
+     `## Poznámky`.
+   Výsledek do `src/content/recipes/`.
 4. **Revize (uživatel):** projde git diff nebo web přes `npm run dev`, opraví.
 
 ## Nasazení
@@ -224,7 +249,7 @@ Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/
     jedna pomlčka, oříznutí krajních pomlček, prázdný výsledek → výjimka,
     rezervovaná jména Windows → `-recept`.
   - `sections.test.ts` — `splitIngredients`: sekce uprostřed, na konci, chybějící,
-    s `###` podnadpisy, dvojí `## Suroviny`, nadpis v code bloku; vždy platí
+    s `###` podnadpisy, dvojí `## Ingredience`, nadpis v code bloku; vždy platí
     `before + ingredients + after === body`.
   - `split.test.ts` — rozsekání ukázkového exportu (fixture) na správný počet kusů
     se správnými názvy, zahození úvodu, kolize slugů včetně situace, kdy `-2`
