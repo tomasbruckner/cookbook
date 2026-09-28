@@ -234,8 +234,9 @@ Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/
 3. **Normalizace (Claude v konverzaci):** každý raw kus převede do formátu z kapitoly
    Datový model: doplní frontmatter (kategorie a štítek kuchyně z kapitoly),
    rozdělí obsah do `## Ingredience` / `## Postup` / `## Poznámky`. **Obsah receptu
-   se nemění** (žádné suroviny, kroky ani poznámky se nepřidávají ani neubírají),
-   ale **vše je česky a v metrických jednotkách**:
+   se nemění** (žádné suroviny ani kroky se nepřidávají ani neubírají, množství se
+   nevymýšlejí), ale **vše je česky, v metrických jednotkách a v jednotném stručném
+   stylu** (rozhodnutí uživatele 2026-09-28, viz „Jednotný styl“ níže):
    - Anglický (i jiný cizojazyčný) text se přeloží do češtiny — názvy surovin,
      postup, podnadpisy. Název receptu se přeloží, pokud má zavedený český
      ekvivalent; jinak zůstane (Pancakes, Poke, Tacos, Kimchi…).
@@ -256,7 +257,14 @@ Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/
      „Omáčka", „Videonávod") zůstanou jako `###` v nejbližší sekci nebo jdou do
      `## Poznámky`.
    Výsledek do `src/content/recipes/`.
-4. **Revize (uživatel):** projde git diff nebo web přes `npm run dev`, opraví.
+4. **Jednotný styl (druhý průchod, všechny recepty):**
+   - `## Postup` vždy číslované kroky `1.`; ve skupinách `###` číslování od 1.
+   - Kroky stručné (1–2 věty, rozkazovací způsob), bez vaty; všechna množství,
+     teploty, časy a podstatné tipy zůstávají.
+   - Ingredience: nejdřív položky s množstvím, na konci jeden řádek koření / „podle
+     chuti“; suroviny malým písmenem; množství se nedoplňují, kde ve zdroji nejsou.
+   - Spisovná čeština s diakritikou (i v textu, který ji ve zdroji neměl).
+5. **Revize (uživatel):** projde git diff nebo web přes `npm run dev`, opraví.
 
 ## Nasazení
 

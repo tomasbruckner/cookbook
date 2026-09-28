@@ -7,7 +7,7 @@ category: snidane
 
 * 3 vajíčka na porci
 * ¼ cibule na porci
-* sůl, pepř
 * chleba
 * pažitka nebo jarní cibulka
 * sýr
+* sůl, pepř – podle chuti

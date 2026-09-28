@@ -5,9 +5,9 @@ category: snidane
 
 ## Ingredience
 
+* 1 vajíčko na porci
 * avokádo
 * chleba
 * šalotka
 * cherry rajčata
 * citrón
-* 1 vajíčko na porci

@@ -5,18 +5,17 @@ category: predkrmy-a-polevky
 
 ## Postup
 
-* zmrazene krevety rano vyndam z mrazaku a necham venku v misce. pusti vodu. tu pak odleju  
-* nasekam 3-4 cesneky na platky  
-* nasekam chilli (nebo take ne \- nemeli jste)  
-* nasekam pulku salotky na drobno (nebo take ne \- nemeli jste. spise jsem zapomnel)  
-* nasekam cherry rajcatka na 1/4 (nebo rajce na male kousky) (nebo take nedam. to je spis muj vymysl). rekl bych ze jste meli tak asi 10  
-* nasekam petrzel na skoro drobno. takova vetsi hrst
+1. Ráno vyndejte zmražené krevety z mrazáku a nechte je venku v misce, aby pustily vodu. Vodu pak slijte.
+2. Nakrájejte 3–4 stroužky česneku na plátky.
+3. Nakrájejte chilli (volitelně).
+4. Nakrájejte na drobno půlku šalotky (volitelně).
+5. Nakrájejte cherry rajčátka na čtvrtky, asi 10 kusů (nebo rajče na malé kousky; volitelně).
+6. Nasekejte petržel skoro nadrobno – větší hrst.
 
 ### Akce
 
-* rozehreju olej (docela dost)  
-* dam krevety  
-* osolim, opeprim  
-* kdyz jsou uz trochu udelane, olej nespis uz neni tak vrouci tak prihodim cesnek (pripadne cibuli a chilli)  
-* krevety porad obracim  
-* po chvilce pridam petrzel a rajcatka
+1. Rozehřejte dostatek oleje.
+2. Přidejte krevety, osolte a opepřete.
+3. Když jsou krevety trochu udělané a olej už není tak vroucí, přidejte česnek (případně šalotku a chilli).
+4. Krevety průběžně obracejte.
+5. Po chvíli přidejte petržel a rajčátka.

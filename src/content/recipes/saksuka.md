@@ -12,26 +12,19 @@ category: snidane
 * 400 g cizrny
 * 1 cibule
 * 1 paprika
-* 4 česneky
-* rajčatová pasta
-* Gorgonzola
-* Nějaké bylinky (máta, bazalka, koriandr, petržel) na dozdobení
-* Kmín
-* Fenyklová semínka
-* Uzená paprika
-* Sůl
-* Pepř
+* 4 stroužky česneku
+* rajčatový protlak
+* gorgonzola
+* kmín, fenyklová semínka, uzená paprika, sůl, pepř – podle chuti
+* bylinky na ozdobu (máta, bazalka, koriandr, petržel)
 
 ## Postup
 
-1. Oloupejte a nasekejte česnek. Cibuli a papriku nakrájejte na plátky. Do široké pánve nalijte trochu olivového oleje a rozehřejte na střední teplotu. Vložte paprikové plátky a většinu cibule, trochu cibulové naťe si nechte na ozdobu. Česnek zatím nedávejte.
-2. Zeleninu míchejte pár minut. Pokud používáte celá semínka kmínu a fenyklu, přidejte je nyní a nechte je minutku opéct. Přidejte česnek a restujte další minutu. Vmíchejte rajčatový protlak a nechte ho krátce osmahnout.
-3. Před tím, než se protlak připeče, podlijte rajčatovou šťávou z plechovky. Vymačkejte rajčata z plechovky rukou a přidejte je do pánve.
-4. Přisypte mletou papriku, pepř a špetku soli. Omáčku přiveďte k varu a téměř nepřetržitě míchejte, aby se nepřipalovala.
-5. Když omáčka zhoustne na polovinu, přidejte scezenou cizrnu. Pokračujte v míchání a vaření, dokud nebude omáčka hodně hustá.
-6. Vypněte sporák a ochutnejte, případně dosolte.
-7. Pokud chcete pokrm dopéct pod grilem, nyní zapněte troubu na maximum.
-8. V omáčce udělejte důlky na vejce a opatrně do nich rozklepněte vejce. Navrch rozložte kousky sýra.
-9. Zapněte sporák a můžete pánev přikrýt poklicí, aby se vejce napařila do požadované konzistence.
-10. Nebo jako já – nechte vejce pod pokličkou částečně ztuhnout, pak dejte pánev pod gril a pečte pár minut, dokud povrch nezezlátní a vejce nebude dle chuti hotové (můžete vejce jemně zatřást, aby se ověřila konzistence žloutku).
-11. Vyjměte pánev z trouby, ozdobte zbývající cibulovou natí a čerstvými bylinkami. Podávejte rovnou z pánve, rodinně – při porcování na talíře pokrm vypadá méně hezky.
+1. Nasekejte česnek, cibuli a papriku nakrájejte na plátky (trochu cibulové natě nechte na ozdobu).
+2. Na olivovém oleji na střední teplotě pár minut restujte papriku a cibuli. Přidejte kmín a fenykl, po minutě česnek.
+3. Vmíchejte protlak, krátce osmahněte a podlijte šťávou z rajčat. Rajčata rukou rozmačkejte do pánve.
+4. Přidejte uzenou papriku, pepř a sůl. Vařte za častého míchání, dokud omáčka nezhoustne na polovinu.
+5. Přidejte scezenou cizrnu a vařte do husta. Dochuťte solí.
+6. Udělejte v omáčce důlky, rozklepněte do nich vejce a navrch rozložte gorgonzolu.
+7. Přikryjte poklicí a nechte vejce ztuhnout. Případně dopečte pár minut pod grilem na maximum, dokud povrch nezezlátne.
+8. Ozdobte cibulovou natí a bylinkami a podávejte rovnou z pánve.

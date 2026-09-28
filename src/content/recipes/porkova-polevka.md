@@ -12,14 +12,12 @@ category: predkrmy-a-polevky
 * 700 g brambor
 * 1 l vody
 * 240 ml smetany (36 % tuku)
-* sůl
-* pepř
-* Čerstvý rozmarýn/tymián/petržel
+* sůl, pepř, čerstvý rozmarýn/tymián/petržel – podle chuti
 
 ## Postup
 
-1. Osmažíme salám/klobásu
-2. Přidáme pórek a osmažíme, než trošku změkne
-3. Přidáme brambory
-4. Přidáme vodu a zaděláme pokličkou a vaříme, než změknou brambory
-5. Snížíme teplotu a přidáme smetanu
+1. Osmažte salám nebo klobásu.
+2. Přidejte pórek a osmažte, než trochu změkne.
+3. Přidejte brambory.
+4. Přilijte vodu, zakryjte pokličkou a vařte, než brambory změknou.
+5. Snižte teplotu a přidejte smetanu.

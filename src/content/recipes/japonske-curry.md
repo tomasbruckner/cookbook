@@ -7,21 +7,21 @@ servings: 6
 
 ## Ingredience
 
-* Golden curry půlka balení
+* ½ balení Golden curry
 * 80 g rýže na porci
-* Brambory
-* Cuketa
-* Mrkev
-* Cibule
+* brambory
+* cuketa
+* mrkev
+* cibule
 * + věci na řízky
 
 ## Postup
 
-1. Postavíme rýži
-2. Naklepeme a nasolíme maso viz řízky
-3. Oškrábeme a nakrájíme zeleninu na cca 3 cm kousky, cibuli na půměsíčky
-4. Osmažíme zeleninu
-5. Přidáme vodu dle golden curry
-6. Zaděláme pokličkou a vaříme, než bude zelenina měkká
-7. Usmažíme řízky
-8. Do hrnce přidáme golden curry a rozmícháme
+1. Uvařte rýži.
+2. Maso naklepejte a nasolte (viz řízky).
+3. Zeleninu oškrábejte a nakrájejte na kostičky asi 3 cm, cibuli na půlměsíčky.
+4. Zeleninu osmažte.
+5. Přidejte vodu podle návodu na Golden curry.
+6. Přiklopte pokličkou a vařte, dokud zelenina nezměkne.
+7. Usmažte řízky.
+8. Do hrnce přidejte Golden curry a rozmíchejte.

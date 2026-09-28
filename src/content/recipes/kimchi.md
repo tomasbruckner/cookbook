@@ -12,8 +12,8 @@ category: ostatni
 * 1 hlava pekingského zelí
 * cca 360 g hrubozrnné soli bez jódu
 * cca 5 cm bílé ředkvičky
-* jarní cibulka (lze použít i pažitku)
 * 6-8 kousků kelpu (asi jako velikost telefonu)
+* jarní cibulka (lze použít i pažitku)
 
 ### Omáčka
 
@@ -24,49 +24,45 @@ category: ostatni
 * 1 lžíce mletého zázvoru
 * 60 ml rybí omáčky
 * 2 lžíce medu
-* 1/2 lžíce cukru
+* ½ lžíce cukru
 * 1 polévková lžíce hrubozrnné soli bez jódu
 
 ## Postup
 
-**Příprava zelí**
+### Příprava zelí
 
-1. Zelí nakrájíme na 4 kusy. Důkladně ho umyjte a odstraňte nečistoty - zejména v blízkosti stonků.
-2. Naplňte velkou plastovou misku 1,5 litru vody. Poté přidejte 120 g soli.
-3. Několikrát zamíchejte rukama (není potřeba sůl úplně rozpustit ve vodě). Poté rychle ponořte každý kus zelí do vody - jen tak, aby byl mokrý, nenechávejte ho ve vodě. Poté jej položte na sítko a nechte několik minut odkapávat přebytečnou vodu.
-4. Potom vezmeme cca 160 g soli. Postupně posypte každou vrstvu zelí (zhruba tak, jako byste posypali sůl na vajíčko - to je množství, které chcete vložit do každé vrstvy.). Zaměřte se se solením na bílé stonky zelí. Nemusíte spotřebovat celou sůl.
-5. Poté zelí dejte do nějaké nádoby a přikryjte víkem (abyste zabránili vniknutí mušek) a nechte jej odstát při pokojové teplotě po dobu nejméně 6 hodin (nebo přes noc).
+1. Zelí nakrájejte na 4 kusy. Důkladně ho umyjte a odstraňte nečistoty, zejména v blízkosti stonků.
+2. Naplňte velkou plastovou misku 1,5 litru vody a přidejte 120 g soli.
+3. Několikrát zamíchejte rukama (sůl se nemusí úplně rozpustit). Rychle namočte každý kus zelí ve vodě, jen aby zvlhl, nenechávejte ho v ní. Položte na sítko a nechte několik minut okapat.
+4. Vezměte cca 160 g soli a postupně posypte každou vrstvu zelí – zhruba tolik, kolik byste dali na vajíčko. Zaměřte se hlavně na bílé stonky. Nemusíte spotřebovat celou sůl.
+5. Zelí dejte do nádoby, přikryjte víkem (kvůli muškám) a nechte odstát při pokojové teplotě nejméně 6 hodin (nebo přes noc).
 
-**Zkontrolujte zelí**
+### Zkontrolujte zelí
 
-1. Následující den ohněte stonek zelí a zkontrolujte, zda praskne. Pokud praskne, nechte jej déle odstát ve slané vodě.
-2. Pokud je zelí připravené, každou vrstvů zelí omyjte důkladně pod tekoucí vodou. Po jednom kole mytí znovu omyjte! Toto druhé mytí pomůže snížit celkovou slanou chuť z listů.
-3. Umyjte všechny kousky zelí a nechte v sítku odkapat.
+1. Následující den ohněte stonek zelí – pokud praskne, nechte ho déle odstát ve slané vodě.
+2. Je-li zelí připravené, každou vrstvu důkladně omyjte pod tekoucí vodou, a to dvakrát – druhé mytí sníží přebytečnou slanost.
+3. Ochutnejte list zelí – měl by být slaný, ale ne příliš. Pokud je moc slaný, umyjte ho ještě potřetí, pak nechte okapat na sítku.
 
-[DŮLEŽITÉ: V tomto okamžiku ochutnejte list zelí - měl by chutnat slaně, ale ne příliš slaně.]
-Umyjte to znovu potřetí - pokud chutná příliš slaně.
+### Připravte zeleninu
 
-**Připravte zeleninu**
+1. Oškrábejte ředkvičku a nakrájejte na tenké dlouhé hranolky (cca 1×1 mm).
+2. Nakrájejte pažitku (cca 5cm kousky) nebo jarní cibulku (zelenou část cca 1–2 cm).
 
-1. Oškrábejte ředkvičku a nákrájejte na tenké dlouhé hranolky (cca 1mm x 1mm)
-2. Nakájejte pažítku (cca 5 cm kousky) nebo jarní cibulku (zelenou část cca 1-2 cm)
+### Příprava kimchi pasty
 
-**Příprava Kimchi pasty**
+1. Do hrnce dejte 0,5 litru vody, houby shiitake a kelp. Vařte na mírné teplotě 10 minut, ať vznikne vývar. Vypněte a nechte vývar úplně vychladnout – to je důležité.
+2. Přidejte rýžovou mouku a rozmíchejte bez hrudek ještě předtím, než zapnete sporák. Pak vařte na mírném ohni, dokud pasta nezhoustne.
+3. Ve velké plastové míse smíchejte gochugaru, mletý česnek, mletý zázvor, rybí omáčku, med, sůl a cukr. Přidejte pastu a dobře promíchejte.
+4. Vmíchejte ředkvičku a pažitku/cibulku.
 
-1. Vemte hrnec a naplňte 0,5 litrem vody. Do něj vložte 4 houby shiitake a kelp. Dejte ji na mírnou teplotu a vařte po dobu 10 minut, abyste získali vývar. Vypněte vývar a nechte ho úplně vychladnout. (Poznámka: Je důležité nechat vývar vývaru zcela vychladnout)
-2. Když se vývar ochladí, přidejte rýžovou mouku a rozmíchejte, abyste se zbavili všech hrudek. (Poznámka: Nezapínejte sporák, dokud není úplně rozmíchané). Poté položte hrnec na mírný oheň. Míchejte, dokud pasta nezhoustne a nevytvoří hustou konzistenci.
-3. Vemte velkou plastovou misku. Vložte gochugaru, mletý česnek, mletý zázvor, rybí omáčku, med, sůl a cukr. Poté vložte i pastu. Dobře promíchejte.
-4. Pak vložte i ředkvičku a pažitku/cibulku a znova promíchejte.
+### Příprava kimchi
 
-**Přípava Kimchi**
-
-1. Natřete Kimchi pastu na každou vrstvu listu zelí (viz video). Opakujte pro všechny 4 kusy zelí.
-2. Umístěte hotové kousky Kimchi do velké uzavíratelné plastové/skleněné nádoby.
-3. Nádobu nezavírejte kompletně. Musí zde být přístup vzduchu.
-4. Nechte odstát při pokojové teplotě cca 1 den.
-5. Následující den uvidíte v kimchi tekutině bublinky (z kvašení).
-6. Nyní vložte kvasící kimchi do chladničky. Nechte ho několik hodin vychladnout v lednici.
-7. Jakmile je kimchi studené, nakrájejte zelí na menší kousky a podávejte!
+1. Natřete kimchi pastu na každou vrstvu listu zelí (viz video). Opakujte pro všechny 4 kusy zelí.
+2. Vložte hotové kousky do velké uzavíratelné plastové nebo skleněné nádoby, kterou nezavírejte úplně – musí mít přístup vzduchu.
+3. Nechte odstát při pokojové teplotě cca 1 den.
+4. Následující den uvidíte v tekutině bublinky z kvašení.
+5. Vložte kvasící kimchi do lednice a nechte ho tam několik hodin vychladnout.
+6. Jakmile je studené, nakrájejte zelí na menší kousky a podávejte.
 
 ## Poznámky
 

@@ -12,7 +12,7 @@ category: dezerty
 ### Krusta
 
 * 180 g drcených grahamových sušenek
-* 70 g nesoleného másla, rozpuštěného (70 g)
+* 70 g rozpuštěného nesoleného másla
 * 2 lžíce krystalového cukru
 
 ### Cheesecake

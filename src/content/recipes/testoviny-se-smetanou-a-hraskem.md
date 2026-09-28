@@ -8,22 +8,21 @@ tags: [italska]
 
 ## Ingredience
 
-* 150-200 g zakysané smetany 18%
-* 80 g Ricotta sýru
+* 150–200 g zakysané smetany 18%
+* 80 g ricotty
 * 150 g slaniny
 * 120 g hrášku
-* Sůl
-* Pepř
-* 220 g těstovin Farfalle
-* 3 stroušky česneku
+* 220 g těstovin (farfalle)
+* 3 stroužky česneku
+* sůl, pepř – podle chuti
 
 ## Postup
 
-1. Dáme vařit těstoviny a osolíme
-2. Osmažíme slaninu
-3. Přidáme česnek do slaniny a osmažíme česnek
-4. Přidáme hrášek do vody s těstovinami na prohřátí hrášku
-5. Přidáme trochu vody z těstovin do slaniny
-6. Přidáme těstoviny do slaniny a promícháme
-7. Přidáme ricotto, smetanu a pepř
-8. Promícháme a servírujeme
+1. Dejte vařit těstoviny a osolte.
+2. Osmažte slaninu.
+3. Přidejte česnek ke slanině a osmažte ho.
+4. Přidejte hrášek do vody s těstovinami, ať se prohřeje.
+5. Přilijte trochu vody z těstovin ke slanině.
+6. Přidejte těstoviny ke slanině a promíchejte.
+7. Přidejte ricottu, smetanu a pepř.
+8. Promíchejte a podávejte.

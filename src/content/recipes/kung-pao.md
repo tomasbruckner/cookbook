@@ -14,12 +14,12 @@ servings: 4
 * ½ velké cibule
 * 100 g omáčka Kung Pao Živina
 * 60 g nadrcených nesolených arašídů
-* Jarní cibulka na dozdobení
+* jarní cibulka na dozdobení
 
 ## Postup
 
-1. Postavíme rýži
-2. Nakrájíme kuřecí na kousky a osmažíme
-3. Nakrájíme zeleninu na 2x2 cm velké kousky a osmažíme
-4. Přidáme maso, omáčku a arašídy
-5. Chvilku provaříme a pak jen dozdobíme cibulkou
+1. Uvařte rýži.
+2. Kuřecí maso nakrájejte na kousky a osmažte.
+3. Zeleninu nakrájejte na kostičky 2×2 cm a osmažte.
+4. Přidejte maso, omáčku a arašídy.
+5. Chvíli provařte a dozdobte jarní cibulkou.

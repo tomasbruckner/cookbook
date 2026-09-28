@@ -6,35 +6,35 @@ tags: [italska]
 
 ## Ingredience
 
-### Pro testo (4 porce)
+### Pro těsto (4 porce)
 
-* 20 g drozdi
-* ½ lzicky cukru
-* 500 g polohrube(Spaldova mouka) mouky nebo 550 g hladke mouky
-* 5 lzic panenskeho olivoveho oleje
-* 1 lzicka soli
+* 20 g droždí
+* ½ lžičky cukru
+* 500 g polohrubé mouky (špaldová) nebo 550 g hladké mouky
+* 5 lžic panenského olivového oleje
+* 1 lžička soli
 
-### Pro napln
+### Pro náplň
 
-* Uvarene kureci prsni rizky
-* Nekolik rajcat
-* ¼ cukety
 * 100 g goudy
-* Rajcatovy potlak
-* Rajcata v plechovce
+* uvařené kuřecí prsní řízky
+* několik rajčat
+* ¼ cukety
+* rajčatový protlak
+* rajčata v plechovce
 
 ## Postup
 
-### Pro testo
+### Pro těsto
 
-1. Rozmichat rozdrobene drozdi, trochu vlazne vody a cukr. Nechat na teplem meste aby vznikl kvasek.
-2. V mise rozmichat mouku, sul, kvasek, olej. Postupne prilivat cca 300 ml vlazne vody a propacovat, az vznikne soudruzne testo.
-3. Vytvorit bochanek, poprasit moukou, prikryt ruznikem a nechat kynout 1,5 az 2 hodiny.
+1. Rozmíchejte rozdrobené droždí, trochu vlažné vody a cukr. Nechte na teplém místě, aby vznikl kvásek.
+2. V míse rozmíchejte mouku, sůl, kvásek a olej. Postupně přilévejte cca 300 ml vlažné vody a pracujte, až vznikne soudržné těsto.
+3. Vytvarujte bochánek, poprašte moukou, přikryjte utěrkou a nechte kynout 1,5 až 2 hodiny.
 
-### Pro napln
+### Pro náplň
 
-1. Rozdelit kureci na vlakna.
-2. Nakrajit cuketu na placky.
-3. Nastrouhat Gaudu nahrubo.
-4. Udelat zaklad (rajcara v plechovce + potlak + sul + pepr + olej).
-5. Pect cca 8 minut v rezimu p1.
+1. Rozdělte kuřecí maso na vlákna.
+2. Nakrájejte cuketu na plátky.
+3. Nastrouhejte goudu nahrubo.
+4. Připravte základ (rajčata v plechovce + protlak + sůl + pepř + olej).
+5. Pečte cca 8 minut v režimu p1.

@@ -9,52 +9,50 @@ tags: [italska]
 ## Ingredience
 
 * 300 g mrkve
-* 1 velka cervena cibule
-* 400 g kureci jatra
-* 1 kg mleteho masa (hovezi)
-* 120 ml rajcatoveho protlaku
-* 4 plechovky drcenych rajcat
-* 1 flaska bileho vina
-* Kureci vyvar
-* 1 lzice oregano
-* 1 lzice petrzel
-* 1 lzice bazalky
-* 1 lzice tymianu
-* 1 lzice cesneku
-* 40 ml balzamikoveho octa
-* pepr
-* sul
+* 1 velká červená cibule
+* 400 g kuřecích jater
+* 1 kg mletého hovězího masa
+* 120 ml rajčatového protlaku
+* 4 plechovky drcených rajčat
+* 1 láhev bílého vína
+* 1 lžíce oregana
+* 1 lžíce petrželky
+* 1 lžíce bazalky
+* 1 lžíce tymiánu
+* 1 lžíce česneku
+* 40 ml balzamikového octa
+* kuřecí vývar
+* sůl, pepř – podle chuti
 
 ## Postup
 
-**Restování zeleniny**
+### Restování zeleniny
 
-* Mrkev a cibuli oloupejte a nasekejte najemno.
-* Ve velkém hrnci (alespoň 7 litrů) rozehřejte olivový olej a zeleninu opékejte na vysokém plameni za stálého míchání, dokud nezměkne.
-* Poté ji dejte stranou do mísy nebo na talíř.
+1. Mrkev a cibuli oloupejte a nasekejte najemno.
+2. Ve velkém hrnci (alespoň 7 litrů) rozehřejte olivový olej a zeleninu opékejte na vysokém plameni za stálého míchání, dokud nezměkne.
+3. Dejte ji stranou do mísy nebo na talíř.
 
-**Příprava jater**
+### Příprava jater
 
-* Játra nasekejte velmi najemno, téměř na pastu.
+1. Játra nasekejte velmi najemno, téměř na pastu.
 
-**Opékání masa**
+### Opékání masa
 
-* Do stejného hrnce přidejte další olivový olej a opečte mleté maso na vysoké teplotě.
-* Neustále míchejte a dřevěnou vařečkou maso rozbíjejte, aby se netvořily kuličky.
-* Opékejte, dokud se nevypaří většina vody a maso nezačne praskat.
+1. Do stejného hrnce přidejte další olivový olej a opečte mleté maso na vysoké teplotě.
+2. Za stálého míchání maso vařečkou rozbíjejte, aby se netvořily kuličky. Opékejte, dokud se nevypaří většina vody a maso nezačne praskat.
 
-**Přidání jater a protlaku**
+### Přidání jater a protlaku
 
-* Vmíchejte nasekaná játra a rajčatový protlak, dobře promíchejte.
+1. Vmíchejte nasekaná játra a rajčatový protlak, dobře promíchejte.
 
-**Uvolnění přípečků a dušení**
+### Uvolnění přípečků a dušení
 
-* Když se začnou na dně tvořit přípečky, které hrozí připálením, přilijte víno (nebo vývar) a důkladně seškrábněte vše ze dna hrnce.
-* Přidejte lžičku bujónu, promíchejte.
-* Snižte teplotu na mírný var a vařte přikryté **2 hodiny**, občas promíchejte, aby se omáčka nepřipalovala.
+1. Když se na dně začnou tvořit přípečky, které hrozí připálením, přilijte víno (nebo vývar) a seškrábněte je ze dna hrnce.
+2. Přidejte lžičku bujónu a promíchejte.
+3. Snižte teplotu na mírný var a vařte přikryté 2 hodiny, občas promíchejte, aby se omáčka nepřipalovala.
 
-**Dochucení a dokončení**
+### Dochucení a dokončení
 
-* Po dvou hodinách přidejte sušené bylinky a trochu balzamikového octa.
-* Pokračujte ve vaření ještě **1 hodinu**, dokud omáčka nezíská požadovanou hustotu.
-* Dochutťe solí a pepřem podle chuti.
+1. Po dvou hodinách přidejte sušené bylinky a trochu balzamikového octa.
+2. Vařte dalších 1 hodinu, dokud omáčka nezíská požadovanou hustotu.
+3. Dochuťte solí a pepřem podle chuti.

@@ -7,16 +7,16 @@ category: hlavni-chody
 
 ## Ingredience
 
-* 1 celé kuře  
-* sůl  
-* pepř  
-* 2 lžíce tymiánu  
-* Citrónová kůra  
-* 100 g másla  
+* 1 celé kuře
+* 2 lžíce tymiánu
+* 100 g másla
 * 100 ml vody
+* citronová kůra
+* sůl, pepř – podle chuti
 
 ## Postup
 
-Kuře osolíme, opepříme, posypeme sekaným tymiánem, který můžeme dát i dovnitř, citronovou kůrou, poklademe máslem, podlijeme vodou, přiklopíme poklicí (nebo alobalem) a necháme marinovat do druhého dne.
-
-Druhý den sundáme poklici a připravené kuře pečeme v troubě rozpálené na 120 °C asi 4 hodiny. Poté zvýšíme teplotu na 220 °C a dopékáme 20-30 minut dozlatova.
+1. Kuře osolte, opepřete, posypte sekaným tymiánem (část můžete dát i dovnitř) a citronovou kůrou.
+2. Poklaďte máslem, podlijte vodou, přiklopte poklicí (nebo alobalem) a nechte marinovat do druhého dne.
+3. Druhý den sundejte poklici a pečte kuře v troubě rozpálené na 120 °C asi 4 hodiny.
+4. Zvyšte teplotu na 220 °C a dopékejte 20–30 minut dozlatova.

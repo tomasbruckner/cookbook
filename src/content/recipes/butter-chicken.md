@@ -10,32 +10,32 @@ tags: [indicka]
 
 ### Marinada
 
-* 4 cesneky
-* 3 cm zazvor
-* Recky jogurt
-* 1 lzicka mlety koriandr
-* ½ lzicky skorice
-* Lzicka papriky
-* 1 lzicka kminu
-* ½ lzicka soli
-* 600 g kureci stehna
+* 4 stroužky česneku
+* 3 cm zázvoru
+* 1 lžička mletého koriandru
+* ½ lžičky skořice
+* 1 lžička papriky
+* 1 lžička kmínu
+* ½ lžičky soli
+* 600 g kuřecích stehen
+* řecký jogurt
 
-### Omacka
+### Omáčka
 
 * 200 g cibule
-* 1 kg rajcat
-* 30 g masla
-* 8 cesneku
-* 1 lzicky garam masala
-* 2 lzicky methi
-* 4 lzicky paprika
-* 4 zelene kardamony
-* Voda
-* 100 g kesu
+* 1 kg rajčat
+* 30 g másla
+* 8 stroužků česneku
+* 1 lžička garam masaly
+* 2 lžičky methi
+* 4 lžičky papriky
+* 4 zelené kardamony
+* 100 g kešu
 * ½ citronu
+* voda
 
 ## Postup
 
-1. Marinovat a nechat pres noc
-2. Napichat na tycinky a grilovat v trouble 20-25 minut (otocit co 10 minut)
-3. Osmazit cibulku, pak rajcata
+1. Maso marinujte a nechte přes noc.
+2. Napíchněte na tyčinky a grilujte v troubě 20–25 minut, po 10 minutách otočte.
+3. Osmažte cibuli a přidejte rajčata.

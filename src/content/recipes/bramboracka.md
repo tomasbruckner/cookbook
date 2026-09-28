@@ -7,21 +7,22 @@ category: predkrmy-a-polevky
 
 ## Ingredience
 
-* Mrkev
-* Celer
-* Petržel
-* Květák
-* Brambory
-* Česnek
-* Cibule
-* Majoránku
-* Máslo
-* Houby
-* Kmín
-* Veci na vývar
+* mrkev
+* celer
+* petržel
+* květák
+* brambory
+* česnek
+* cibule
+* máslo
+* houby
+* věci na vývar
+* kmín, majoránka – podle chuti
 
 ## Postup
 
-V hrnci rozehřejeme máslo, přidáme kmín a růžičky květáku a orestujeme. Přidáme kořenovou zeleninu nakrájenou na kostičky a cibuli na větší kousky, přilijeme vývar, přidáme brambory nakrájené na kostičky, osolíme, opepříme a přidáme prolisovaným česnekem.
-V druhém hrnci rozehřejeme olej, přisypeme mouku a připravíme tmavší jíšku.
-Do polévky přidáme sušené houby namočené ve studené vodě, za stálého míchání rovněž jíšku a necháme asi 15 minut provařit. Nakonec dochutíme majoránkou a čerstvě nasekanými bylinkami.
+1. V hrnci rozehřejte máslo, přidejte kmín a růžičky květáku a orestujte.
+2. Přidejte kořenovou zeleninu nakrájenou na kostičky a cibuli na větší kousky, přilijte vývar a přidejte brambory nakrájené na kostičky. Osolte, opepřete a přidejte prolisovaný česnek.
+3. V druhém hrnci rozehřejte olej, přisypte mouku a připravte tmavší jíšku.
+4. Do polévky přidejte sušené houby namočené ve studené vodě a za stálého míchání i jíšku. Vařte asi 15 minut.
+5. Nakonec dochuťte majoránkou a čerstvě nasekanými bylinkami.

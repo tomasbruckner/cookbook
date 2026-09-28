@@ -5,22 +5,22 @@ category: dezerty
 
 ## Ingredience
 
-* 2 ks vajcka
-* 200 g cukr
-* sul
-* 200 g zakysana smetana
-* 100 g maslo
-* 260 g mouka
-* 10 g kyprici prasek
-* vanilkovy cukr
-* 250 g maliny
+* 2 vejce
+* 200 g cukru
+* 200 g zakysané smetany
+* 100 g másla
+* 260 g mouky
+* 10 g kypřicího prášku
+* 250 g malin
+* sůl
+* vanilkový cukr
 
 ## Postup
 
-1. Rozmichame vajicka, pridame cukr, vanilkovy cukr a sul. Michame do bila.
-2. Roztopime maslo v mikrovlce (nesmi byt horke), pridame do testa.
-3. Pak pridame smetanu a smichame.
-4. Pote pridame kyprici prasek a mouku.
-5. Troubo rozehrejeme na 180 °C.
-6. Na formu dame pulku testa, pak nasypeme malinami a pak pridame dalsi pulku.
-7. Hodime do trouby na 30-40 minut.
+1. Vejce rozmíchejte, přidejte cukr, vanilkový cukr a sůl. Šlehejte do běla.
+2. Máslo rozpusťte v mikrovlnce (nesmí být horké) a přidejte do těsta.
+3. Přidejte smetanu a promíchejte.
+4. Přidejte kypřicí prášek a mouku.
+5. Troubu předehřejte na 180 °C.
+6. Do formy dejte polovinu těsta, navrch nasypte maliny a přidejte zbylé těsto.
+7. Pečte v troubě 30–40 minut.

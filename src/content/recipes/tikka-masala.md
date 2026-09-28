@@ -10,32 +10,32 @@ tags: [indicka]
 
 ### Marináda
 
-* 150 g jogurt
+* 150 g jogurtu
 * 0,5 lžičky kurkumy
 * 1 lžička papriky
-* 0,5 lžičky garam masala
+* 0,5 lžičky garam masaly
 * 1 lžička soli
-* 4 stroušky česneku
-* Kousek zázvoru
+* 4 stroužky česneku
 * 800 g kuřecích prs
+* kousek zázvoru
 
 ### Omáčka
 
 * 50 g kešu
 * 50 ml mléka
 * 1 lžička kmínu
-* Pár bobkových listů
-* Pár černý kardamon
-* Pár zelený kardamon
-* Skořice
+* pár bobkových listů
+* pár černých kardamonů
+* pár zelených kardamonů
 * 2 cibule
-* Kousek zázvoru
-* Česnek
 * 5 rajčat
-* Rajčatový protlak
-* Koriandr
-* Koriandr koření
 * 1 lžička papriky
 * 1 lžička garam masaly
 * 0,5 lžičky kurkumy
-* Smetana ke šlehání
+* skořice
+* kousek zázvoru
+* česnek
+* rajčatový protlak
+* koriandr
+* mletý koriandr
+* smetana ke šlehání

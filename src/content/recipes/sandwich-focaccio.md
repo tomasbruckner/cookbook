@@ -23,39 +23,38 @@ category: svaciny
 
 ### Náplň
 
-* Rajčata
-* Prosciutto
-* Majonéza
-* Citrón
-* Sůl
-* Pepř
-* Pesto
-* Baby salát
-* Mozarella
-* Salámi
-* Beranní rohy
+* rajčata
+* prosciutto
+* majonéza
+* citron
+* pesto
+* baby salát
+* mozzarella
+* salámi
+* beránní rohy
+* sůl, pepř – podle chuti
 
 ### Pesto
 
 * 55 g piniových oříšků
 * 50 g bazalky
-* 3 česneky
 * 90 g parmezánu
 * 120 g olivového oleje
+* 3 stroužky česneku
 
 ## Postup
 
 ### Focaccia
 
-* Ve velké míse stolního mixéru smíchejte chlebovou a celozrnnou mouku.
-* V samostatné nádobě promíchejte teplou vodu s instantním droždím, dokud se úplně nerozpustí.
-* Pomocí hnětacího háku zapněte mixér na nízkou rychlost a začněte pomalu přilévat k mouce směs s droždím. Míchejte přibližně 10 minut a občas setřete těsto ze stěn mísy.
-* Přidejte sůl, zvyšte rychlost na středně nízkou a míchejte dalších 10 minut.
-* Přilijte olivový olej a hněťte ještě 3–5 minut, dokud se olej zcela nezapracuje.
-* Těsto vyklopte na pracovní plochu bez mouky a hněťte ho ručně asi 2 minuty metodou „slap and fold“ (natažení a přeložení).
-* Do nádoby o objemu 3–4 litry nastříkejte olej a přidejte trochu olivového oleje. Těsto vložte dovnitř, přiklopte víkem potřené olejem a uložte do lednice na 48 až 72 hodin.
-* Připravte si plech – postříkejte ho olejem a přidejte štědrou dávku olivového oleje. Opatrně vyjměte těsto a přesuňte ho na plech.
-* Jemně roztáhněte těsto ke krajům plechu. Přikryjte obráceným plechem a zabalte do potravinové fólie. Nechte kynout při pokojové teplotě 3 hodiny.
-* Předehřejte troubu na 260–290 °C (horní hranice možností vaší trouby).
-* Pokapejte těsto olivovým olejem a posypte libovolným kořením nebo náplněmi – ve videu byl použit za'atar a vločková sůl.
-* Pečte 20–25 minut, dokud povrch nebude zlatavý a křupavý.
+1. Ve velké míse stolního mixéru smíchejte chlebovou a celozrnnou mouku.
+2. V samostatné nádobě promíchejte teplou vodu s instantním droždím, dokud se úplně nerozpustí.
+3. Pomocí hnětacího háku na nízké rychlosti přilévejte k mouce směs s droždím. Míchejte přibližně 10 minut a občas setřete těsto ze stěn mísy.
+4. Přidejte sůl, zvyšte rychlost na středně nízkou a míchejte dalších 10 minut.
+5. Přilijte olivový olej a hněťte ještě 3–5 minut, dokud se olej zcela nezapracuje.
+6. Těsto vyklopte na pracovní plochu bez mouky a hněťte ho ručně asi 2 minuty metodou „slap and fold“ (natažení a přeložení).
+7. Vložte těsto do vymazané nádoby o objemu 3–4 litry, přiklopte olejem potřeným víkem a uložte do lednice na 48 až 72 hodin.
+8. Připravte plech potřený olejem, opatrně na něj přesuňte těsto a jemně ho roztáhněte ke krajům.
+9. Přikryjte obráceným plechem, zabalte do potravinové fólie a nechte kynout při pokojové teplotě 3 hodiny.
+10. Předehřejte troubu na 260–290 °C (horní hranice možností vaší trouby).
+11. Pokapejte těsto olivovým olejem a posypte kořením nebo náplní podle chuti (např. za'atar a vločková sůl).
+12. Pečte 20–25 minut, dokud povrch nezezlátne a nebude křupavý.

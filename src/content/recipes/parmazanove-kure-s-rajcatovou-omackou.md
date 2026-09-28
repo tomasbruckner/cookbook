@@ -7,25 +7,24 @@ category: hlavni-chody
 
 ## Ingredience
 
-* 600 g kuřecího masa  
-* Sůl  
-* Pepř  
-* 4 stroužky česneku, nasekané  
-* 1 šalotka, nasekaná  
-* 2 lžíce rajčatového protlaku  
-* 2 plechovky drcených rajčat  
-* Hladká mouka  
-* 1–2 vejce, rozšlehané  
-* Panko strouhanka  
-* Strouhaný parmazán nebo pecorino  
-* Čtvrt kila špaget  
-* Čerstvé bazalkové listy, natrhané
+* 600 g kuřecího masa
+* 4 stroužky česneku, nasekané
+* 1 šalotka, nasekaná
+* 2 lžíce rajčatového protlaku
+* 2 plechovky drcených rajčat
+* 1–2 vejce, rozšlehaná
+* 250 g špaget
+* hladká mouka
+* panko strouhanka
+* strouhaný parmazán nebo pecorino
+* čerstvé bazalkové listy, natrhané
+* sůl, pepř – podle chuti
 
 ## Postup
 
-1. Osmažíme cibulku a česnek  
-2. Přidáme rajčatový protlak a minutku osmažíme  
-3. Přidat krájená rajčata, snížit teplotu a 25 minut probubláme  
-4. Pak posolíme a opepříme (přidáme natrhanou bazalku)  
-5. Udělat řízky (do strouhanky přidat sýr)  
-6. Uvařit špagety
+1. Osmažte šalotku a česnek.
+2. Přidejte rajčatový protlak a minutku osmažte.
+3. Přidejte krájená rajčata, snižte teplotu a nechte 25 minut probublávat.
+4. Osolte, opepřete a přidejte natrhanou bazalku.
+5. Připravte řízky: strouhanku smíchejte se sýrem, maso obalte v mouce, vejci a strouhance a osmažte.
+6. Uvařte špagety.

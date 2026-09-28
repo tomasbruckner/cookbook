@@ -16,7 +16,7 @@ category: dezerty
 * 240 g zakysané smetany
 * 120 g olivového oleje
 * 1 lžička vanilkového extraktu
-* 1/4 lžičky mořské soli
+* ¼ lžičky mořské soli
 * 250 g hladké mouky
 * 2 lžičky prášku do pečiva
 * 2 lžičky citronové kůry
@@ -26,5 +26,5 @@ category: dezerty
 ### Poleva
 
 * 120 g moučkového cukru
-* 1 1/2 až 2 lžíce čerstvé citronové šťávy
-* 1/2 lžičky citronové kůry
+* 1½ až 2 lžíce čerstvé citronové šťávy
+* ½ lžičky citronové kůry

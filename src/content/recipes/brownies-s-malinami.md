@@ -17,11 +17,11 @@ category: dezerty
 
 ## Postup
 
-1. Předehřejeme troubu na 180 °C.
-2. Ve vodní lázni rozpustíme čokoládu s máslem. Jakmile je směs tekutá, přidáme cukr a promícháme. Odstavíme z ohně a necháme mírně vychladnout.
-3. Směs přelijeme do větší mísy a přidáme vejce. Důkladně promícháme mixérem nebo metličkou.
-4. Přidáme kakao, poté mouku a případně pár kapek vanilkového aroma.
-5. Plech o velikosti 30×20 cm vyložíme pečicím papírem. (Tip: dno i boky plechu nejprve potřete trochou másla – papír se tak lépe přichytí.)
-6. Nalijeme těsto na plech a povrch poklademe malinami.
-7. Pečeme 25–30 minut. Pro vláčnější brownies postačí 25 minut, pro lepší krájení doporučujeme 30 minut.
-8. Necháme zchladnout, poté krájíme na kostky. Lze vyzkoušet i s jahodami.
+1. Předehřejte troubu na 180 °C.
+2. Ve vodní lázni rozpusťte čokoládu s máslem. Jakmile je směs tekutá, přidejte cukr a promíchejte. Odstavte z ohně a nechte mírně vychladnout.
+3. Směs přelijte do větší mísy a přidejte vejce. Důkladně promíchejte mixérem nebo metličkou.
+4. Přidejte kakao, poté mouku a případně pár kapek vanilkového aroma.
+5. Plech o velikosti 30×20 cm vyložte pečicím papírem. Tip: dno i boky plechu nejprve potřete trochou másla, papír se tak lépe přichytí.
+6. Nalijte těsto na plech a povrch poklaďte malinami.
+7. Pečte 25–30 minut – 25 minut pro vláčnější brownies, 30 minut pro lepší krájení.
+8. Nechte zchladnout a krájejte na kostky. Lze vyzkoušet i s jahodami.

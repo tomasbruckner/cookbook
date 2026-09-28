@@ -16,7 +16,7 @@ Na 3 quesadilly:
 * 6 tortill
 * 200 g strouhaného sýra
 * 1 lžíce mleté chili papriky
-* 1/2 lžičky sušeného mletého česneku
+* ½ lžičky sušeného mletého česneku
 * 1 lžička soli
-* 1/2 lžičky mletého černého pepře
+* ½ lžičky mletého černého pepře
 * 1 lžička mletého kmínu

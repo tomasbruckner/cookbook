@@ -8,26 +8,25 @@ tags: [italska]
 
 ## Ingredience
 
-* 125 g Eidamu
-* 125 g Cheddaru
-* 40 g Plesnivého sýra
+* 125 g eidamu
+* 125 g cheddaru
+* 40 g plísňového sýra
 * 40 g vlašských ořechů
 * 30 g strouhanky
 * 80 g parmezánu
-* Máslo
 * 200 g šunky
 * 500 g těstovin (fusilli)
-* Sůl
-* Pepř
+* máslo
+* sůl, pepř – podle chuti
 
 ## Postup
 
-1. Dáme vařit těstoviny a osolíme
-2. Osmažíme šunku na másle
-3. Přidáme cheddar, eidam a plesnivý sýr do pánve a rozpustíme ho, přidáme trochu vody z těstovin
-4. Vymažeme máslem pekáč
-5. Přidáme těstoviny al dente do pánve a promícháme, přidáme pepř
-6. Nakrájíme ořechy a smícháme se strouhankou a sýrem v misce
-7. Směs z pánve dáme do pekáče a posypeme parmezánem
-8. Posypeme směsí s ořechama
-9. Dáme do předehřáté trouby na 20 minut na 180 °C (bez víka)
+1. Dejte vařit těstoviny a osolte.
+2. Osmažte šunku na másle.
+3. Přidejte do pánve cheddar, eidam a plísňový sýr, nechte rozpustit a přilijte trochu vody z těstovin.
+4. Vymažte pekáč máslem.
+5. Přidejte do pánve těstoviny uvařené al dente, promíchejte a opepřete.
+6. Nakrájejte ořechy a smíchejte je se strouhankou a sýrem v misce.
+7. Směs z pánve přendejte do pekáče a posypte parmezánem.
+8. Navrch posypte směsí s ořechy.
+9. Dejte do předehřáté trouby na 20 minut při 180 °C (bez víka).

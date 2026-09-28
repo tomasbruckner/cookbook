@@ -8,25 +8,25 @@ tags: [indicka]
 
 ## Ingredience
 
-* 200 g cerna cocka
+* 200 g černé čočky
 * 44 g ledvinových fazolí
-* 1 lzicka jedlé sody
-* 2 cervene cibule
-* 3 cm zazvoru
-* 4 cesneky
-* 2 lzice rajcove pasty
-* ⅛ muskatovy orech
-* 1 lzicka koriandru
-* ½ lzicky chilli
-* 2 lzicky soli (kosher)
-* Pepr
-* 2 rajcata
-* 120 g kokosove mleko
+* 1 lžička jedlé sody
+* 2 červené cibule
+* 3 cm zázvoru
+* 4 stroužky česneku
+* 2 lžíce rajčatového protlaku
+* ⅛ muškátového oříšku
+* 1 lžička koriandru
+* ½ lžičky chilli
+* 2 lžičky kosher soli
+* 2 rajčata
+* 120 g kokosového mléka
 * 12 g koriandru
-* 1 lzice citronove stavy
-* ½ lzicky cukru
-* 3 hrebicky
-* 1 bobkovy list
-* 1 lzicka kminu
+* 1 lžíce citronové šťávy
+* ½ lžičky cukru
+* 3 hřebíčky
+* 1 bobkový list
+* 1 lžička kmínu
 * 4 kardamony
-* 1 skorice
+* 1 skořice
+* pepř – podle chuti

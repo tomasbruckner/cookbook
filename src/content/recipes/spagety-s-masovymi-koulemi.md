@@ -8,15 +8,15 @@ tags: [italska]
 
 ## Ingredience
 
-* 500 g mletého masa krk
+* 500 g mletého masa (krk)
 * 20 g strouhanky panko
-* 20 g pecorino/parmazán
+* 20 g pecorina/parmazánu
+* 2 plechovky sekaných rajčat
 * mléko
-* sůl, pepř
 * česnek
 * cibule
 * mletá paprika
 * rajčatová pasta
-* 2 plechovky sekaných rajčat
 * špagety
 * bazalka
+* sůl, pepř – podle chuti

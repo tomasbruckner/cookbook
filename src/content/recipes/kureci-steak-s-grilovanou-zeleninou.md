@@ -5,10 +5,10 @@ category: hlavni-chody
 
 ## Ingredience
 
-* kuřecí prsa  
-* zeleninu do trouby (brambor, batát, mrkev, dýně, …)
+* kuřecí prsa
+* zelenina do trouby (brambor, batát, mrkev, dýně, …)
 
 ## Postup
 
-1. cca 20 minut zelenina v troubě na 180 stupňů  
-2. pak přidat maso k zelenině na cca 15 minut na 210 stupňů
+1. Zeleninu pečte v troubě cca 20 minut na 180 °C.
+2. Přidejte maso k zelenině a pečte dalších cca 15 minut na 210 °C.

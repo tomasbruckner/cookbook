@@ -7,14 +7,14 @@ servings: 8
 
 ## Ingredience
 
-* Hovezi maso (napr. hrudi 1.5 kg)
-* bile zeli 0,8 kg
+* 1,5 kg hovězí maso (např. hrudí)
+* 0,8 kg bílé zelí
+* 3 plechovky rajčat
+* 1 velká cibule
+* 1 plechovka fazolí
 * mrkev
 * brambor
 * paprika
-* 3 plechovky rajcat
-* cesnek
-* 1 velka cibule
-* rajcatovy protlak
-* rapikaty celer
-* Plechovka fazoli
+* česnek
+* rajčatový protlak
+* řapíkatý celer

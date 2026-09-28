@@ -8,20 +8,19 @@ tags: [mexicka]
 
 ## Ingredience
 
-* 1 kg kure (prsa nebo stehna)
+* 1 kg kuře (prsa nebo stehna)
 * 1 červená paprika
-* 1 zluta paprika
+* 1 žlutá paprika
 * 1 pórek
 * 3 mrkve
 * 2 červené cibule
-* 2 plechovky rajcat
-* 1 plechovka bile fazole
-* 1 plechovka cizrna
-* 2 lzicky kminu
-* 2 lzicky uzene papriky
-* Sul
-* Pepr
+* 2 plechovky rajčat
+* 1 plechovka bílých fazolí
+* 1 plechovka cizrny
+* 2 lžičky kmínu
+* 2 lžičky uzené papriky
+* sůl, pepř – podle chuti
 
 ## Postup
 
-1. Dusime cca 1 hodinu
+1. Vše duste asi 1 hodinu.

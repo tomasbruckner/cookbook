@@ -9,9 +9,9 @@ servings: 6
 
 ### Marináda
 
-* Hovězí maso cca 1000 g
+* cca 1000 g hovězího masa
 * 6 lžic sójové omáčky
-* 4 lžíce mirin
+* 4 lžíce mirinu
 * 3 lžíce sezamového oleje
 * 6 stroužků česneku
 * 1 lžička mletého černého pepře
@@ -21,14 +21,14 @@ servings: 6
 
 ### Další ingredience
 
-* Jarni cibulka 1 stonek
-* Cibule
-* Zelenina dle chuti (mrkev, cuketa, salat, okurek a pod.)
+* 1 stonek jarní cibulky
+* cibule
+* mrkev, cuketa, salát, okurka a podobná zelenina – podle chuti
 
 ## Postup
 
-Maso nakrajit na tensi platky, muze se zamrazit na chvilku v mrazaku aby se lepe krajilo. Nalozit maso v marinade aspon na 30 minut. Muze byt i pres noc.
-
-Smazit cibuli, mrkev a cuketu cca 15 minut pri vysoke teplote. Pridame maso do stejne panvi a snizime ohen. Cheme aby maso pustilo stavu. Smazime dokud maso nebude hotove.
-
-Do misy pridame korejskou ryzi, maso a zbytek cerstve zeleniny.
+1. Maso nakrájejte na tenké plátky (můžete ho na chvíli zamrazit v mrazáku, aby se lépe krájelo).
+2. Naložte maso do marinády alespoň na 30 minut, klidně přes noc.
+3. Cibuli, mrkev a cuketu smažte asi 15 minut na vysoké teplotě.
+4. Přidejte maso do stejné pánve, snižte oheň a smažte, dokud maso nepustí šťávu a nebude hotové.
+5. Do misky dejte korejskou rýži, maso a zbytek čerstvé zeleniny.

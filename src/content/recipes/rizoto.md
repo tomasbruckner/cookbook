@@ -5,20 +5,18 @@ category: hlavni-chody
 
 ## Ingredience
 
-* 600 g masa  
-* Plechovka hrášku  
-* Plechovka kukuřice  
-* Cibule  
-* Sojová omáčka  
-* Další zelenina dle chuti  
-* Sůl, pepř  
-* Koření dle chuti
+* 600 g masa
+* 1 plechovka hrášku
+* 1 plechovka kukuřice
+* cibule
+* sojová omáčka
+* další zelenina, sůl, pepř, koření – podle chuti
 
 ## Postup
 
-1. Dáme vařit osolenou rýži  
-2. Nakrájíme maso na kousky a cibuli na půlměsíčky  
-3. Osmažíme cibuli a jak bude měkká, tak přidáme hrášek a kukuřici (případně jinou zeleninu) a lehce osmažíme  
-4. Zeleninu vyndáme z pánve a osmažíme maso  
-5. Přidáme zeleninu, rýži, přidáme koření a zalijeme sojovkou  
-6. Promícháme
+1. Uvařte osolenou rýži.
+2. Maso nakrájejte na kousky a cibuli na půlměsíčky.
+3. Osmažte cibuli, po změknutí přidejte hrášek a kukuřici (případně jinou zeleninu) a krátce orestujte.
+4. Zeleninu vyjměte z pánve a osmažte maso.
+5. Přidejte zeleninu a rýži, okořeňte a zalijte sojovou omáčkou.
+6. Promíchejte.
