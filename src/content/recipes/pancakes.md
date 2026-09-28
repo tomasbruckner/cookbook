@@ -7,8 +7,8 @@ category: snidane
 
 ## Ingredience
 
-* 3pcs Egg  
-* 20ml (4 tsp) Milk  
-* 30g (3.3 tbsp) All-purpose flour  
-* 1.25ml (1/4 tsp) Vanilla extract (optional)  
-* 25g (2 tbsp) Sugar
+* 3 vejce
+* 20 ml mléka
+* 30 g hladké mouky
+* 1 ml vanilkového extraktu (nepovinné)
+* 25 g cukru
