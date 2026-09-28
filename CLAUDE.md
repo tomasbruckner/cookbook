@@ -31,8 +31,11 @@ Single e2e test: `npx playwright test -g "search without diacritics" --project=d
   `sections.ts` (`splitIngredients` — dělení těla podle `## Ingredience`), `plaintext.ts`,
   `search.ts` (normalizace bez diakritiky, AND matching), `recipes.ts` (řazení cs, skupiny),
   `format.ts`. `.astro` soubory jen skládají markup.
-- **Detail receptu** renderuje tělo po třech částech přes `marked` (`before` / `ingredients`
-  / `after`), na `lg:` ingredience vlevo sticky.
+- **Detail receptu** renderuje tělo po třech částech přes `renderMarkdown` (`src/lib/markdown.ts`,
+  `before` / `ingredients` / `after`), na `lg:` ingredience vlevo sticky.
+- **YouTube**: odstavec složený jen z odkazů → YouTube odkazy (`src/lib/youtube.ts`) se vykreslí
+  jako click-to-load náhled + „Otevřít v YouTube"; skript v detailu po klepnutí vloží
+  `youtube-nocookie` iframe. Odkaz uprostřed věty zůstává odkazem.
 - **Hledání**: index se vkládá do úvodní stránky jako `<script type="application/json"
   id="search-index">`; island v `Search.astro` skrývá `[data-slug]` položky a prázdné
   `[data-group]` sekce. Bez JS je pole skryté a výpis funguje.

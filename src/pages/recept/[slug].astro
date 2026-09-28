@@ -1,11 +1,11 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
-import { marked } from 'marked';
 import Base from '../../layouts/Base.astro';
 import TagList from '../../components/TagList.astro';
 import { categoryLabel } from '../../consts';
 import { splitIngredients } from '../../lib/sections';
 import { formatMinutes, formatServings } from '../../lib/format';
+import { renderMarkdown } from '../../lib/markdown';
 
 export async function getStaticPaths() {
   const recipes = await getCollection('recipes');
@@ -18,7 +18,6 @@ interface Props {
 const { recipe } = Astro.props;
 const { title, category, tags, servings, time, source } = recipe.data;
 const { before, ingredients, after } = splitIngredients(recipe.body ?? '');
-const html = (md: string) => marked.parse(md, { async: false }) as string;
 const prose =
   'prose prose-zinc prose-lg max-w-none dark:prose-invert prose-a:text-[var(--color-accent)] prose-a:break-words';
 ---
@@ -39,15 +38,34 @@ const prose =
       )}
     </header>
 
-    {before.trim() && <div class={prose} set:html={html(before)} />}
+    {before.trim() && <div class={prose} set:html={renderMarkdown(before)} />}
 
     {
       ingredients !== null && (
         <div class="mt-6 lg:grid lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] lg:gap-10">
-          <div data-section="ingredients" class={`${prose} lg:sticky lg:top-4 lg:self-start lg:max-h-[calc(100dvh-2rem)] lg:overflow-y-auto`} set:html={html(ingredients)} />
-          <div data-section="rest" class={prose} set:html={html(after)} />
+          <div data-section="ingredients" class={`${prose} lg:sticky lg:top-4 lg:self-start lg:max-h-[calc(100dvh-2rem)] lg:overflow-y-auto`} set:html={renderMarkdown(ingredients)} />
+          <div data-section="rest" class={prose} set:html={renderMarkdown(after)} />
         </div>
       )
     }
   </article>
 </Base>
+
+<script>
+  // Click-to-load: YouTube se načte až po klepnutí na náhled.
+  document.querySelectorAll<HTMLElement>('[data-youtube-id]').forEach((figure) => {
+    const thumb = figure.querySelector<HTMLAnchorElement>('.yt-thumb');
+    if (!thumb) return;
+    thumb.addEventListener('click', (event) => {
+      event.preventDefault();
+      const start = figure.dataset.start ? `&start=${figure.dataset.start}` : '';
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${figure.dataset.youtubeId}?autoplay=1${start}`;
+      iframe.title = 'Video k receptu';
+      iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
+      iframe.allowFullscreen = true;
+      iframe.className = 'aspect-video w-full rounded-lg';
+      thumb.replaceWith(iframe);
+    });
+  });
+</script>

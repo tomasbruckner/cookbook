@@ -185,6 +185,27 @@ Layout `src/layouts/Base.astro`: `<html lang="cs">`, title, meta viewport,
   unit testy), island ji importuje.
 - Bez JS: pole se nezobrazí (vloží ho až skript), výpis receptů a navigace fungují.
 
+## YouTube videa
+
+- Odstavec těla receptu, který obsahuje **jen odkazy** (oddělené mezerami / zalomením
+  řádku), se vykreslí po odkazech: odkaz na YouTube (`youtube.com/watch?v=`,
+  `youtu.be/`, `youtube.com/shorts/`) jako přehrávač, ostatní odkazy jako běžný
+  odkaz na samostatném řádku. Odkaz uprostřed věty zůstává odkazem.
+- Rozpoznání URL (`src/lib/youtube.ts`, `parseYouTubeUrl(url)` → `{ id, start? } |
+  null`): id = 11 znaků `[A-Za-z0-9_-]`; `t`/`start` parametr (`297`, `2s`, `1m30s`)
+  → začátek v sekundách. Ostatní parametry (`pp`, `si`…) se ignorují.
+- Vykreslení (`src/lib/markdown.ts`, `renderMarkdown(md)` — sdílená instance
+  `marked` s vlastním rendererem odstavce; nahrazuje přímé volání `marked` v detailu):
+  - **Click-to-load náhled**: `<figure data-youtube-id>` s odkazem na původní URL,
+    uvnitř náhled `https://i.ytimg.com/vi/<id>/hqdefault.jpg` (`loading="lazy"`)
+    a tlačítko ▶. Stránka nenačítá nic z YouTube kromě náhledu.
+  - Skript na stránce detailu po klepnutí na náhled zamezí navigaci a nahradí ho
+    `<iframe>` z `https://www.youtube-nocookie.com/embed/<id>?autoplay=1[&start=N]`
+    (poměr 16:9, `allowfullscreen`, `title`).
+  - Pod přehrávačem vždy odkaz **„Otevřít v YouTube"** na původní URL — na mobilu
+    ho systém otevře v aplikaci YouTube.
+  - Bez JS vede klepnutí na náhled na YouTube (běžný odkaz).
+
 ## Převod z Google Docs
 
 Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/`
@@ -212,8 +233,19 @@ Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/
    - Na konci vypíše počet receptů a jejich seznam — uživatel porovná s dokumentem.
 3. **Normalizace (Claude v konverzaci):** každý raw kus převede do formátu z kapitoly
    Datový model: doplní frontmatter (kategorie a štítek kuchyně z kapitoly),
-   rozdělí obsah do `## Ingredience` / `## Postup` / `## Poznámky`. **Text receptu
-   se nepřepisuje**, jen strukturuje:
+   rozdělí obsah do `## Ingredience` / `## Postup` / `## Poznámky`. **Obsah receptu
+   se nemění** (žádné suroviny, kroky ani poznámky se nepřidávají ani neubírají),
+   ale **vše je česky a v metrických jednotkách**:
+   - Anglický (i jiný cizojazyčný) text se přeloží do češtiny — názvy surovin,
+     postup, podnadpisy. Název receptu se přeloží, pokud má zavedený český
+     ekvivalent; jinak zůstane (Pancakes, Poke, Tacos, Kimchi…).
+   - Imperiální jednotky se převedou a **původní údaj se nenechává**: cups/oz → g
+     (sypké suroviny, sýr, máslo) nebo ml (tekutiny) podle konkrétní suroviny,
+     lb → g, fl oz → ml, °F → °C. Hodnoty se zaokrouhlí na rozumná čísla (g/ml na
+     5, pod 20 na celé jednotky).
+   - tsp / tbsp → lžička / lžíce (ne gramy). Pokud řádek už obsahuje metrické
+     množství („20ml (4 tsp) Milk"), zůstane jen metrika („20 ml mléka").
+   Strukturování:
    - Odkazy na zdroj a úvodní text zůstávají nahoře, nad `## Ingredience`.
    - Více skupin ingrediencí („Ingredience svíčková", „Ingredience knedlík") →
      jedno `## Ingredience` s podnadpisy `### Svíčková`, `### Knedlík`; totéž pro
@@ -284,4 +316,5 @@ Jednorázový proces. Skripty v `scripts/migrate/`, pracovní data v `migration/
 - Editace na webu, přihlašování, backend.
 - SEO, sitemap, OG, analytika.
 - Pagefind nebo jiná vyhledávací knihovna (zvážit až při stovkách receptů).
+- Vložené přehrávače jiných služeb než YouTube.
 - Git-connected automatický deploy (lze zapnout později přes Workers Builds).

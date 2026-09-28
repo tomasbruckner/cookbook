@@ -53,8 +53,8 @@ test('a long ingredients list can be scrolled into view within the sticky column
     if ((await ingredients.count()) === 0) continue;
     const box = await ingredients.boundingBox();
     if (!box || box.height <= 700) continue; // jen dost dlouhý seznam ingrediencí aktivuje omezení výšky
-    // sroluj stránku jen kousek dolů, do postupu (ne až na konec stránky)
-    await page.evaluate(() => window.scrollBy(0, 500));
+    // sroluj stránku kousek za začátek sloupce (sloupec se přichytí), ale ne až na konec stránky
+    await ingredients.evaluate((el) => window.scrollTo(0, el.getBoundingClientRect().top + window.scrollY + 200));
     const lastLi = ingredients.locator('li').last();
     await ingredients.evaluate((el) => el.scrollTo(0, el.scrollHeight));
     await expect(lastLi).toBeInViewport();
