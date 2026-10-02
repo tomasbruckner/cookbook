@@ -12,20 +12,19 @@ servings: 4
 * 1 kg kuřecí na vývar
 * 2 litry vody
 * 1 cibule
-* 7 cm zázvoru
-* 4 stroužky česneku
+* 5–7 cm zázvoru
+* 3–4 stroužky česneku
+* 2 jarní cibulky
 * 1–1,5 lžičky soli
 
 ### Polévka
 
-* 500 g kuřecí maso
+* 350–450 g kuřecích stehenních řízků
 * 500 g ramen nudle
 * 6 lžic sojové omáčky
 * 3 lžíce cukru
-* 2–4 lžičky sezamového oleje
+* 2 lžičky sezamového oleje (½ lžičky na porci)
 * 2 pak choi
-* 100 g omáčka Kung Pao Živina
-* 60 g nadrcených nesolených arašídů
 * vývar
 * pepř – podle chuti
 * jarní cibulka na ozdobu
